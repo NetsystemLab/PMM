@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 project(missdn LANGUAGES CXX)
 
-add_subdirectory(brew_retrieve)
-
 set(CMAKE_BUILD_TYPE Debug CACHE STRING "Build type" FORCE)
 set(SUBDIRS "data2.cpp" "data_AS.cpp" "data.cpp" "data_random_generate.cpp" 
     "inner_module_0.cpp" "inner_module_1.cpp" "inter_module_0.cpp" "inter_module_1.cpp")
