@@ -11,7 +11,7 @@ set(SUBDIRS "data2.cpp" "data_AS.cpp" "data.cpp" "data_random_generate.cpp"
 foreach(CURRENT_FILE ${SUBDIRS})
     get_filename_component(file_name ${CURRENT_FILE} NAME_WE)
     # message(STATUS "file name is ${file_name}, current file is ${missdn_SOURCE_DIR}/source/${CURRENT_FILE}")
-    add_executable(${file_name} ${missdn_SOURCE_DIR}/PMM/${CURRENT_FILE})
+    add_executable(${file_name} ${missdn_SOURCE_DIR}/source/${CURRENT_FILE})
     target_compile_options(${file_name} PRIVATE "-std=c++11" "-O0")
 endforeach()
 
